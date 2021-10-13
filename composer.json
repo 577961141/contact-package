@@ -1,5 +1,5 @@
 {
-    "name": "qy/handle_exception",
+    "name": "qy1/handle_exception",
     "description": "handle the caught exception",
     "type": "library",
     "license": "apache",
