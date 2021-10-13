@@ -2,7 +2,7 @@
     "name": "qy1/handle_exception",
     "description": "handle the caught exception",
     "type": "library",
-    "license": "apache",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "陈维锐",
