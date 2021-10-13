@@ -1,0 +1,19 @@
+{
+    "name": "qy/handle_exception",
+    "description": "handle the caught exception",
+    "type": "library",
+    "license": "apache",
+    "authors": [
+        {
+            "name": "陈维锐",
+            "email": "17876574358@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bitfumes\\Contact\\": "src/"
+        }
+    }
+}
