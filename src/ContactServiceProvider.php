@@ -29,5 +29,13 @@ class ContactServiceProvider extends ServiceProvider
         // 这个的作用并不是像文档里说的那样，当前目录的/config/contact.php合并/config/contact.php。而是如果没有/config/contact.php就选择当前目录的/config/contact.php(要想使用配置文件必须有这一条)
         $this->mergeConfigFrom(__DIR__.'/config/contact.php', 'contact');
 
+        // 进行包发布(命令：php artisan vendor:push,然后选择你的包)
+        $this->publishes([
+            // 发布配置文件(发布后的配置文件会在/config目录下)
+            __DIR__ . '/config/contact.php' => config_path('contact.php'),
+            // 帆布视图文件(发布后的视图文件会在resource/views/vendor/contact下)
+            __DIR__ . '/views' => resource_path('views/vendor/contact')
+        ]);
+
     }
 }
